@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         self.view.backgroundColor = UIColor.whiteColor()
         
         var button:UIButton = UIButton(frame: CGRectMake(swidth/2 - 50, 40, 100, 40))
-        button.setTitle("生成九宫格", forState: UIControlState.Normal)
+        button.setTitle("生成数独", forState: UIControlState.Normal)
         button.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
         button.addTarget(self, action: "test", forControlEvents: UIControlEvents.TouchUpInside)
         self.view.addSubview(button)
