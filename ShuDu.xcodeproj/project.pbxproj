@@ -9,11 +9,8 @@
 /* Begin PBXBuildFile section */
 		3B760CFD1CB62C7E000FC6FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B760CFC1CB62C7E000FC6FE /* AppDelegate.swift */; };
 		3B760CFF1CB62C7F000FC6FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B760CFE1CB62C7F000FC6FE /* ViewController.swift */; };
-		3B760D021CB62C7F000FC6FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B760D001CB62C7F000FC6FE /* Main.storyboard */; };
 		3B760D041CB62C7F000FC6FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B760D031CB62C7F000FC6FE /* Assets.xcassets */; };
 		3B760D071CB62C7F000FC6FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B760D051CB62C7F000FC6FE /* LaunchScreen.storyboard */; };
-		3B760D121CB62C7F000FC6FE /* ShuDuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B760D111CB62C7F000FC6FE /* ShuDuTests.swift */; };
-		3B760D1D1CB62C7F000FC6FE /* ShuDuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B760D1C1CB62C7F000FC6FE /* ShuDuUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,16 +34,11 @@
 		3B760CF91CB62C7E000FC6FE /* ShuDu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShuDu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B760CFC1CB62C7E000FC6FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B760CFE1CB62C7F000FC6FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3B760D011CB62C7F000FC6FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3B760D031CB62C7F000FC6FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B760D061CB62C7F000FC6FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B760D081CB62C7F000FC6FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B760D0D1CB62C7F000FC6FE /* ShuDuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShuDuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B760D111CB62C7F000FC6FE /* ShuDuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuDuTests.swift; sourceTree = "<group>"; };
-		3B760D131CB62C7F000FC6FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B760D181CB62C7F000FC6FE /* ShuDuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShuDuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B760D1C1CB62C7F000FC6FE /* ShuDuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuDuUITests.swift; sourceTree = "<group>"; };
-		3B760D1E1CB62C7F000FC6FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +70,6 @@
 			isa = PBXGroup;
 			children = (
 				3B760CFB1CB62C7E000FC6FE /* ShuDu */,
-				3B760D101CB62C7F000FC6FE /* ShuDuTests */,
-				3B760D1B1CB62C7F000FC6FE /* ShuDuUITests */,
 				3B760CFA1CB62C7E000FC6FE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -99,30 +89,11 @@
 			children = (
 				3B760CFC1CB62C7E000FC6FE /* AppDelegate.swift */,
 				3B760CFE1CB62C7F000FC6FE /* ViewController.swift */,
-				3B760D001CB62C7F000FC6FE /* Main.storyboard */,
 				3B760D031CB62C7F000FC6FE /* Assets.xcassets */,
 				3B760D051CB62C7F000FC6FE /* LaunchScreen.storyboard */,
 				3B760D081CB62C7F000FC6FE /* Info.plist */,
 			);
 			path = ShuDu;
-			sourceTree = "<group>";
-		};
-		3B760D101CB62C7F000FC6FE /* ShuDuTests */ = {
-			isa = PBXGroup;
-			children = (
-				3B760D111CB62C7F000FC6FE /* ShuDuTests.swift */,
-				3B760D131CB62C7F000FC6FE /* Info.plist */,
-			);
-			path = ShuDuTests;
-			sourceTree = "<group>";
-		};
-		3B760D1B1CB62C7F000FC6FE /* ShuDuUITests */ = {
-			isa = PBXGroup;
-			children = (
-				3B760D1C1CB62C7F000FC6FE /* ShuDuUITests.swift */,
-				3B760D1E1CB62C7F000FC6FE /* Info.plist */,
-			);
-			path = ShuDuUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,7 +202,6 @@
 			files = (
 				3B760D071CB62C7F000FC6FE /* LaunchScreen.storyboard in Resources */,
 				3B760D041CB62C7F000FC6FE /* Assets.xcassets in Resources */,
-				3B760D021CB62C7F000FC6FE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +235,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B760D121CB62C7F000FC6FE /* ShuDuTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +242,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B760D1D1CB62C7F000FC6FE /* ShuDuUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,14 +261,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3B760D001CB62C7F000FC6FE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3B760D011CB62C7F000FC6FE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3B760D051CB62C7F000FC6FE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -482,6 +442,7 @@
 				3B760D231CB62C7F000FC6FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3B760D241CB62C7F000FC6FE /* Build configuration list for PBXNativeTarget "ShuDuTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +451,7 @@
 				3B760D261CB62C7F000FC6FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3B760D271CB62C7F000FC6FE /* Build configuration list for PBXNativeTarget "ShuDuUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +460,7 @@
 				3B760D291CB62C7F000FC6FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
