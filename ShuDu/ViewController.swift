@@ -11,16 +11,23 @@ import UIKit
 var swidth:CGFloat = UIScreen.mainScreen().bounds.width
 var sheight:CGFloat = UIScreen.mainScreen().bounds.height
 var numberArr = [String]()
-var n = 5
+var n:Int!
 
 class ViewController: UIViewController {
+    
+    var textField:UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.view.backgroundColor = UIColor.whiteColor()
+        //创建输入框
+        textField = UITextField(frame: CGRectMake(10,40,200,30))
+        textField.borderStyle = UITextBorderStyle.RoundedRect
+        textField.placeholder = "输入值（3，5，7）"
+        self.view.addSubview(textField)
         
-        var button:UIButton = UIButton(frame: CGRectMake(swidth/2 - 50, 40, 100, 40))
+        let button:UIButton = UIButton(frame: CGRectMake(CGRectGetMaxX(textField.frame), 40, 100, 40))
         button.setTitle("生成数独", forState: UIControlState.Normal)
         button.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
         button.addTarget(self, action: "test", forControlEvents: UIControlEvents.TouchUpInside)
@@ -34,6 +41,27 @@ class ViewController: UIViewController {
     }
     
     func test() {
+        //每次计算时，先移除界面上的显示数据
+        //获取到界面上所有的子视图
+        let chileViews = self.view.subviews
+        //        print(chileViews)
+        for view:UIView in chileViews  {
+            //如果是label对象就移除
+            if view.isKindOfClass(UILabel) {
+                numberArr .removeAll()
+                view.removeFromSuperview()
+            }
+            
+        }
+        //把输入框的值赋给n
+        let str = textField.text
+        if (str == "") {
+            //如果没有输入值，默认为3
+            n = 3
+        } else {
+            
+            n = Int(str!)!
+        }
         
         var sudokuArr = [[NSInteger]]()
         for (var i = 0; i < n; i++) {
@@ -44,7 +72,7 @@ class ViewController: UIViewController {
             sudokuArr.append(arr)
         }
         
-        var middleRow = (n + 1) / 2
+        let middleRow = (n + 1) / 2
         //将1放在第一行的中间列
         sudokuArr[0][middleRow - 1] = 1
         //
@@ -79,10 +107,10 @@ class ViewController: UIViewController {
     
     func setLadels(){
         for var i = 0; i < n*n; ++i {
-            var label:UILabel = UILabel()
-            var subX = i%n*Int(swidth)/(n+1)
-            var x = subX+20*(i)%(n)+1
-            var y = CGFloat(100+(Int(i)/n)*60)
+            let label:UILabel = UILabel()
+            let subX = i%n*Int(swidth)/(n+1)
+            let x = subX+20*(i)%(n)+1
+            let y = CGFloat(100+(Int(i)/n)*60)
             label.frame = CGRectMake(CGFloat(x), y, swidth/CGFloat(n+1), 40.0)
             label.font = UIFont(name: "zapfino", size: 15.0)
             label.textColor = UIColor.grayColor()
@@ -95,6 +123,7 @@ class ViewController: UIViewController {
             
         }
         
+        textField.text = ""
     }
 }
 
